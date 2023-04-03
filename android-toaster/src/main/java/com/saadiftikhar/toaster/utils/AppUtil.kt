@@ -1,10 +1,13 @@
 package com.saadiftikhar.toaster.utils
 
+import android.content.Context
 import android.graphics.BlendMode
 import android.graphics.BlendModeColorFilter
 import android.graphics.PorterDuff
+import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.os.Build
+import androidx.core.content.res.ResourcesCompat
 
 class AppUtil {
     companion object {
@@ -21,5 +24,8 @@ class AppUtil {
             }
         }
 
+        fun getFont(context: Context, fontResId: Int): Typeface? {
+            return ResourcesCompat.getFont(context, fontResId)
+        }
     }
 }
