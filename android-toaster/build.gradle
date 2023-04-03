@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.codesses.gifimageview'
+    namespace 'com.saadiftikhar.toaster'
     compileSdk 33
 
     defaultConfig {

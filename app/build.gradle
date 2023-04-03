@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.codesses.androidtoast'
+    namespace 'com.saadiftikhar.toaster'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.codesses.androidtoast"
+        applicationId "com.saadiftikhar.toaster"
         minSdk 21
         targetSdk 33
         versionCode 1

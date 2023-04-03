@@ -1,4 +1,4 @@
-package saad.android.toaster
+package com.saadiftikhar.toaster
 
 import android.content.Context
 import android.widget.Toast

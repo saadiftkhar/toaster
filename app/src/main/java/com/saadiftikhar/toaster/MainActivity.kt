@@ -1,4 +1,4 @@
-package saad.android.toaster
+package com.saadiftikhar.toaster
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

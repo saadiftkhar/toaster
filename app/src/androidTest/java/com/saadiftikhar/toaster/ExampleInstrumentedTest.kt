@@ -1,4 +1,4 @@
-package saad.android.toaster
+package com.saadiftikhar.toaster
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.codesses.gifimageview.test", appContext.packageName)
+        assertEquals("com.codesses.androidtoast", appContext.packageName)
     }
 }
