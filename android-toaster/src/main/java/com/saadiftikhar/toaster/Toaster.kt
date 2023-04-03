@@ -12,7 +12,11 @@ class Toaster {
 
     companion object {
 
-        fun success(text: String, icon: Int = R.drawable.ic_success) {
+        fun success(
+            text: String,
+            icon: Int = R.drawable.ic_success,
+            font: Int = R.font.basiercircle_regular
+        ) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
             }
@@ -27,7 +31,10 @@ class Toaster {
                     R.color.color_success_dark
                 )
             )
-            binding.tvText.text = text
+            binding.tvText.apply {
+                this.text = text
+                this.typeface = AppUtil.getFont(CommonConfig.getAppContext(), font)
+            }
             binding.ivIcon.setImageResource(icon)
 
             val toast = Toast(CommonConfig.getAppContext()).apply {
@@ -37,7 +44,11 @@ class Toaster {
             toast.show()
         }
 
-        fun error(text: String, icon: Int = R.drawable.ic_error) {
+        fun error(
+            text: String,
+            icon: Int = R.drawable.ic_error,
+            font: Int = R.font.basiercircle_regular
+        ) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
             }
@@ -52,7 +63,10 @@ class Toaster {
                     R.color.color_error_dark
                 )
             )
-            binding.tvText.text = text
+            binding.tvText.apply {
+                this.text = text
+                this.typeface = AppUtil.getFont(CommonConfig.getAppContext(), font)
+            }
             binding.ivIcon.setImageResource(icon)
 
             val toast = Toast(CommonConfig.getAppContext()).apply {
@@ -62,7 +76,11 @@ class Toaster {
             toast.show()
         }
 
-        fun delete(text: String, icon: Int = R.drawable.ic_delete) {
+        fun delete(
+            text: String,
+            icon: Int = R.drawable.ic_delete,
+            font: Int = R.font.basiercircle_regular
+        ) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
             }
@@ -77,7 +95,10 @@ class Toaster {
                     R.color.color_error_dark
                 )
             )
-            binding.tvText.text = text
+            binding.tvText.apply {
+                this.text = text
+                this.typeface = AppUtil.getFont(CommonConfig.getAppContext(), font)
+            }
             binding.ivIcon.setImageResource(icon)
 
             val toast = Toast(CommonConfig.getAppContext()).apply {
@@ -87,7 +108,11 @@ class Toaster {
             toast.show()
         }
 
-        fun warning(text: String, icon: Int = R.drawable.ic_warning) {
+        fun warning(
+            text: String,
+            icon: Int = R.drawable.ic_warning,
+            font: Int = R.font.basiercircle_regular
+        ) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
             }
@@ -102,7 +127,10 @@ class Toaster {
                     R.color.color_warning_dark
                 )
             )
-            binding.tvText.text = text
+            binding.tvText.apply {
+                this.text = text
+                this.typeface = AppUtil.getFont(CommonConfig.getAppContext(), font)
+            }
             binding.ivIcon.setImageResource(icon)
 
             val toast = Toast(CommonConfig.getAppContext()).apply {
@@ -112,7 +140,11 @@ class Toaster {
             toast.show()
         }
 
-        fun info(text: String, icon: Int = R.drawable.ic_info) {
+        fun info(
+            text: String,
+            icon: Int = R.drawable.ic_info,
+            font: Int = R.font.basiercircle_regular
+        ) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
             }
@@ -127,7 +159,10 @@ class Toaster {
                     R.color.color_info_dark
                 )
             )
-            binding.tvText.text = text
+            binding.tvText.apply {
+                this.text = text
+                this.typeface = AppUtil.getFont(CommonConfig.getAppContext(), font)
+            }
             binding.ivIcon.setImageResource(icon)
 
             val toast = Toast(CommonConfig.getAppContext()).apply {

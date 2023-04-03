@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="textFontBasierRegular">
+        <item name="android:fontFamily">@font/basiercircle_regular</item>
+    </style>
+
+    <style name="textFontBasierMedium">
+        <item name="android:fontFamily">@font/basiercircle_medium</item>
+    </style>
+
+    <style name="textFontBasierSemiBold">
+        <item name="android:fontFamily">@font/basiercircle_semibold</item>
+    </style>
+
+    <style name="textFontBasierBold">
+        <item name="android:fontFamily">@font/basiercircle_bold</item>
+    </style>
+</resources>
