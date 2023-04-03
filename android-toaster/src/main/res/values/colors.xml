@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">#ffffff</color>
+    <color name="color_dim_grey">#DADADA</color>
+
+    <color name="color_success_dark">#67CF9D</color>
+    <color name="color_success_dim">#E1F5EB</color>
+
+    <color name="color_error_dark">#FF0000</color>
+    <color name="color_error_dim">#FCDDDD</color>
+
+    <color name="color_warning_dark">#F4C862</color>
+    <color name="color_warning_dim">#FCF4DE</color>
+
+    <color name="color_info_dark">#2783E5</color>
+    <color name="color_info_dim">#D4E6F9</color>
+
+</resources>
