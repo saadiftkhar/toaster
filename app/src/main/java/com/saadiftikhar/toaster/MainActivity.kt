@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnError).setOnClickListener {
             Toaster.error("error")
         }
+        findViewById<Button>(R.id.btnDelete).setOnClickListener {
+            Toaster.delete("delete")
+        }
         findViewById<Button>(R.id.btnWarning).setOnClickListener {
             Toaster.warning("warning")
         }

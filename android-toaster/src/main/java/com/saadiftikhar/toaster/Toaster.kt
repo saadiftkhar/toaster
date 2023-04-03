@@ -62,6 +62,31 @@ class Toaster {
             toast.show()
         }
 
+        fun delete(text: String, icon: Int = R.drawable.ic_delete) {
+            val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
+                LayoutCustomToastBinding.inflate(this)
+            }
+
+            AppUtil.setBackgroundTint(
+                binding.clRoot.background,
+                ContextCompat.getColor(CommonConfig.getAppContext(), R.color.color_error_dim)
+            )
+            binding.ivIcon.setColorFilter(
+                ContextCompat.getColor(
+                    CommonConfig.getAppContext(),
+                    R.color.color_error_dark
+                )
+            )
+            binding.tvText.text = text
+            binding.ivIcon.setImageResource(icon)
+
+            val toast = Toast(CommonConfig.getAppContext()).apply {
+                this.duration = Toast.LENGTH_SHORT
+            }
+            toast.view = binding.root
+            toast.show()
+        }
+
         fun warning(text: String, icon: Int = R.drawable.ic_warning) {
             val binding = LayoutInflater.from(CommonConfig.getAppContext()).run {
                 LayoutCustomToastBinding.inflate(this)
