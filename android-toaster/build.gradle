@@ -54,7 +54,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = "com.saadiftikhar"
+                groupId = "com.github.saadiftkhar"
                 artifactId = "toaster"
                 version = "1.0.0"
 
