@@ -1,8 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
+
+group = 'com.github.saadiftkhar'
 
 android {
     namespace 'com.saadiftikhar.toaster'
@@ -50,26 +51,26 @@ task sourceJar(type: Jar) {
     classifier "sources"
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = "com.github.saadiftkhar"
-                artifactId = "toaster"
-                version = "1.0.0"
-
-                artifact(sourceJar)
-                from components.release
-            }
-        }
-        // note repositories goes under publishing
-        repositories {
-            maven {
-                def deployPath = file(getProperty('aar.deployPath'))
-                url = "file://${deployPath.absolutePath}"
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                groupId = "com.github.saadiftkhar"
+//                artifactId = "toaster"
+//                version = "1.0.0"
+//
+//                artifact(sourceJar)
+//                from components.release
+//            }
+//        }
+//        // note repositories goes under publishing
+//        repositories {
+//            maven {
+//                def deployPath = file(getProperty('aar.deployPath'))
+//                url = "file://${deployPath.absolutePath}"
+//            }
+//        }
+//    }
+//}
 
 
