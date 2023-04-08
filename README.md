@@ -38,7 +38,6 @@ To get a Git project into your build:
       Toaster.success(
           context = this,
           text = "this is success toast",
-          icon = R.drawable.icon           // optional
           font = R.font.basier_circle      // optional
        )
    ```
@@ -50,7 +49,6 @@ To get a Git project into your build:
   Toaster.error(
       context = this,
       text = "this is error toast",
-      icon = R.drawable.icon           // optional
       font = R.font.basier_circle      // optional
    )
    ```
@@ -62,7 +60,6 @@ To get a Git project into your build:
   Toaster.delete(
       context = this,
       text = "this is delete toast",
-      icon = R.drawable.icon           // optional
       font = R.font.basier_circle      // optional
    )
    ```
@@ -74,7 +71,6 @@ To get a Git project into your build:
   Toaster.warning(
       context = this,
       text = "this is warning toast",
-      icon = R.drawable.icon           // optional
       font = R.font.basier_circle      // optional
    )
    ```
@@ -86,7 +82,6 @@ To get a Git project into your build:
   Toaster.info(
       context = this,
       text = "this is info toast",
-      icon = R.drawable.icon           // optional
       font = R.font.basier_circle      // optional
    )
    ```
