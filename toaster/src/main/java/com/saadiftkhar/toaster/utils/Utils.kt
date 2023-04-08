@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 import androidx.core.content.res.ResourcesCompat
 
-class AppUtil {
+class Utils {
     companion object {
 
         fun setBackgroundTint(drawable: Drawable, color: Int) {

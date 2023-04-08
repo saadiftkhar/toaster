@@ -4,7 +4,7 @@ import android.content.Context
 import com.saadiftkhar.toaster.listeners.Bus
 
 
-object CommonConfig {
+object Configs {
     private lateinit var mBus: Bus
 
     fun initSharedConfig(bus: Bus) {
