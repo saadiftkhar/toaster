@@ -15,7 +15,6 @@ class Toaster {
         fun success(
             context: Context,
             text: String,
-            icon: Int = R.drawable.ic_success,
             font: Int = R.font.basiercircle_regular
         ) {
             val binding = LayoutInflater.from(context).run {
@@ -36,7 +35,7 @@ class Toaster {
                 this.text = text
                 this.typeface = Utils.getFont(context, font)
             }
-            binding.ivIcon.setImageResource(icon)
+            binding.ivIcon.setImageResource(R.drawable.ic_success)
 
             val toast = Toast(context).apply {
                 this.duration = Toast.LENGTH_SHORT
@@ -48,7 +47,6 @@ class Toaster {
         fun error(
             context: Context,
             text: String,
-            icon: Int = R.drawable.ic_error,
             font: Int = R.font.basiercircle_regular
         ) {
             val binding = LayoutInflater.from(context).run {
@@ -69,7 +67,7 @@ class Toaster {
                 this.text = text
                 this.typeface = Utils.getFont(context, font)
             }
-            binding.ivIcon.setImageResource(icon)
+            binding.ivIcon.setImageResource(R.drawable.ic_error)
 
             val toast = Toast(context).apply {
                 this.duration = Toast.LENGTH_SHORT
@@ -81,7 +79,6 @@ class Toaster {
         fun delete(
             context: Context,
             text: String,
-            icon: Int = R.drawable.ic_delete,
             font: Int = R.font.basiercircle_regular
         ) {
             val binding = LayoutInflater.from(context).run {
@@ -102,7 +99,7 @@ class Toaster {
                 this.text = text
                 this.typeface = Utils.getFont(context, font)
             }
-            binding.ivIcon.setImageResource(icon)
+            binding.ivIcon.setImageResource(R.drawable.ic_delete)
 
             val toast = Toast(context).apply {
                 this.duration = Toast.LENGTH_SHORT
@@ -114,7 +111,6 @@ class Toaster {
         fun warning(
             context: Context,
             text: String,
-            icon: Int = R.drawable.ic_warning,
             font: Int = R.font.basiercircle_regular
         ) {
             val binding = LayoutInflater.from(context).run {
@@ -135,7 +131,7 @@ class Toaster {
                 this.text = text
                 this.typeface = Utils.getFont(context, font)
             }
-            binding.ivIcon.setImageResource(icon)
+            binding.ivIcon.setImageResource(R.drawable.ic_warning)
 
             val toast = Toast(context).apply {
                 this.duration = Toast.LENGTH_SHORT
@@ -147,7 +143,6 @@ class Toaster {
         fun info(
             context: Context,
             text: String,
-            icon: Int = R.drawable.ic_info,
             font: Int = R.font.basiercircle_regular
         ) {
             val binding = LayoutInflater.from(context).run {
@@ -168,7 +163,7 @@ class Toaster {
                 this.text = text
                 this.typeface = Utils.getFont(context, font)
             }
-            binding.ivIcon.setImageResource(icon)
+            binding.ivIcon.setImageResource(R.drawable.ic_info)
 
             val toast = Toast(context).apply {
                 this.duration = Toast.LENGTH_SHORT

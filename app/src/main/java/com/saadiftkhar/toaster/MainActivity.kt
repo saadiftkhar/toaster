@@ -10,19 +10,38 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.btnSuccess).setOnClickListener {
-            Toaster.success(this, "success")
+            Toaster.success(
+                context = this,
+                text = "success"
+            )
         }
         findViewById<Button>(R.id.btnError).setOnClickListener {
-            Toaster.error(this, "error")
+            Toaster.error(
+                this,
+                "error",
+                font = R.font.basier_circle
+            )
         }
         findViewById<Button>(R.id.btnDelete).setOnClickListener {
-            Toaster.delete(this, "delete")
+            Toaster.delete(
+                this,
+                "delete",
+                font = R.font.basier_circle
+            )
         }
         findViewById<Button>(R.id.btnWarning).setOnClickListener {
-            Toaster.warning(this, "warning")
+            Toaster.warning(
+                this,
+                "warning",
+                font = R.font.basier_circle
+            )
         }
         findViewById<Button>(R.id.btnInfo).setOnClickListener {
-            Toaster.info(this, "info")
+            Toaster.info(
+                this,
+                "info",
+                R.font.basier_circle
+            )
         }
     }
 }
