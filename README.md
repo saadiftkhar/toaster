@@ -15,7 +15,6 @@ To get a Git project into your build:
      ```
      allprojects {
 		repositories {
-			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
